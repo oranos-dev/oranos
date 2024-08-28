@@ -250,7 +250,7 @@ let sections = document.querySelectorAll(".snap");
 let largNavLinks = document.querySelectorAll("a.lg-links");
 let smallNavLinks = document.querySelectorAll("a.sm-links");
 
-window.addEventListener("scroll", function() => {
+window.addEventListener("scroll", function(){
     sections.forEach(sect => {
         let top = window.scrollY;
         let offset = sect.offsetTop - 50; // Adjust offset if needed
