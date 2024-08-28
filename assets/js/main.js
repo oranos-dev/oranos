@@ -17,10 +17,14 @@ const observer = new IntersectionObserver((entries)=>{
  
 
 // scrolling progress bar 
-
+/*
+scroll indicator there was a consflict because you can't use 
+two window.onscroll in the same code and the result was that only the last one will work 
+That’s why I used window.addEventListener("scroll", function and it worked like a charm!!!!!
+*/
 
 let indicator=document.querySelector(".indicator");
-window.onscroll=function(){
+window.addEventListener("scroll", function(){
   let documentHeight=document.documentElement.scrollHeight;
   let viewportHeight=document.documentElement.clientHeight;
   
@@ -30,7 +34,7 @@ window.onscroll=function(){
   
   indicator.style.width=percentageScrolled+"%"
   
-}
+});
 
 
 
@@ -246,7 +250,7 @@ let sections = document.querySelectorAll(".snap");
 let largNavLinks = document.querySelectorAll("a.lg-links");
 let smallNavLinks = document.querySelectorAll("a.sm-links");
 
-window.onscroll = () => {
+window.addEventListener("scroll", function() => {
     sections.forEach(sect => {
         let top = window.scrollY;
         let offset = sect.offsetTop - 50; // Adjust offset if needed
@@ -294,7 +298,7 @@ window.onscroll = () => {
 
 
 
-};
+});
 
 
 // loader 
