@@ -66,7 +66,7 @@ html{
  }
  .loader svg{
     fill: #1c1d24;
-    width: 110px;
+    width: 120px;
  }
  .loader span{
    font-size: 16px;
@@ -241,7 +241,7 @@ h1 span{
     font-size: 14px;
     font-weight: 500;
     color: #646464;
-    font-family: "Montserrat", sans-serif;
+    font-family: montserrat;
     width: 45%;
     text-align: center;
 }
@@ -1876,7 +1876,7 @@ row-gap: 20px;
    /*.c{
       position: absolute;
       bottom: 0;
-      font-family: "Montserrat", sans-serif;
+      font-family: montserrat;
       font-size: 13px;
       height: 25px;
       width: 100dvw;
@@ -2123,7 +2123,7 @@ filter: grayscale(1) invert(0);
     .home-p{
         font-size: 14px;
         color: #646464;
-        font-family: "Montserrat", sans-serif;
+        font-family: montserrat;
         width: 45%;
         text-align: center;
     }
@@ -2221,7 +2221,7 @@ html{
 
 .footer{
     gap: 0;
-
+    overflow: visible;
     
 }
 .footer-container{
@@ -2250,6 +2250,7 @@ html{
     margin-bottom: 10px;
    }
 
+   .dark .footer .waves,
    .footer .waves{
     bottom: 0px;
  }
@@ -2302,7 +2303,7 @@ html{
         font-size: 12px;
         color: #646464;
         width: 65%;
-        font-family: "Montserrat", sans-serif;
+        font-family: montserrat;
         text-align: center;
     }
     
@@ -2426,7 +2427,7 @@ p.footer-rights{
    }
 
    .footer .waves{
-    bottom: 0px;
+    display: none;
  }
 
 
@@ -2505,6 +2506,38 @@ p.footer-rights{
      scale: 0.7;
     
  }
+
+
+
+}
+@media (max-width:400px){
+    .projects-container {
+     padding-left: 3%;
+     padding-right: 3%;
+}
+.projects-name{
+    font-size: 1.4em;
+}
+.languages{
+    scale: 0.8;
+}
+    .projects-description {
+     
+        height: 163.67px;
+    width:300px;
+}
+    .projects-img {
+     
+        height: 163.67px;
+    width:300px;
+}
+
+
+    .projects-img img{
+        height: 163.67px;
+    width:300px;
+}
+
 
 
 
