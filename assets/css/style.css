@@ -1887,7 +1887,7 @@ row-gap: 20px;
    }*/
 
    .footer{
-      height: 57dvh;
+      height: 58dvh;
       width: 100dvw;
       position: relative;
       display: flex;
@@ -2104,6 +2104,9 @@ filter: grayscale(1) invert(0);
  }
 
  
+ .footer{
+    height: 60dvh;
+ }
 }
 @media (max-width:900px) {
     header{
@@ -2222,9 +2225,10 @@ html{
 .footer{
     gap: 0;
     overflow: visible;
-    
+    height: 55dvh;
 }
 .footer-container{
+    overflow: hidden;
     padding: 0 20px 50px 20px;
 }
 .footer-text{
@@ -2374,6 +2378,11 @@ html{
 .first-btn svg{
     width: 15px;
 }
+
+.footer{
+    height: 65dvh;
+  
+ }
 
 .footer-container{
     display: flex;
