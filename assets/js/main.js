@@ -39,9 +39,6 @@ window.addEventListener("scroll", function(){
 
 
 
-
-
-
 // the class name will be injected in the intersection with the section so that the css be recognized !!!!!
 // education vertical bar
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -87,11 +84,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
    observer.observe(element);
  });
 });
-
-
-
-
-
 
 
 
@@ -163,10 +155,6 @@ function remove_dreamer() {
    element.classList.remove('dream');
  });
 }
-
-
-
-
 
 
 
