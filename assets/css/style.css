@@ -214,7 +214,7 @@ h1 span{
 }
 .home{
         width: 100%;
-        height: 100dvh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -654,7 +654,7 @@ h1 span{
     }
  }
 
-.dark .cisco-certificate{
+.dark .certificate{
     color: #53e79a;
  }
 
@@ -934,10 +934,12 @@ filter: grayscale(0) invert(1);
     z-index: 5;
     gap: 5px;font-size: 15px;
     font-weight: 400;
-    transition: 1s ease;
+    visibility: hidden;
+    transition: 2s ease;
     border: none;
 }
 .github-btn{
+    visibility: hidden;
     padding: 6px;
     background-color: #000000;
     border-radius: 20px;
@@ -948,7 +950,7 @@ filter: grayscale(0) invert(1);
     bottom: 15px;
     left: 170px;
     z-index: 5;
-    transition: 1s ease;
+    transition: 2s ease;
     border: none;
 }
 
@@ -1080,6 +1082,12 @@ filter: grayscale(0) invert(1);
   .projects-img:active  .projects-description ,
   .projects-img:hover  .projects-description {
     opacity: 1;
+  }
+  .projects-img:active  .projects-description  .live-demo,
+  .projects-img:hover  .projects-description .live-demo,
+  .projects-img:active  .projects-description  .github-btn,
+  .projects-img:hover  .projects-description .github-btn{
+    visibility: visible;
   }
   .projects-description:active  ,
   .projects-description:hover  {
@@ -1320,6 +1328,9 @@ filter: grayscale(0) invert(1);
 .dot-in-view:nth-child(4) { transition-delay: 3s; }
 .dot-in-view:nth-child(5) { transition-delay: 4s; }
 .dot-in-view:nth-child(6) { transition-delay: 5s; }
+.dot-in-view:nth-child(7) { transition-delay: 6s; }
+.dot-in-view:nth-child(8) { transition-delay: 7s; }
+.dot-in-view:nth-child(9) { transition-delay: 8s; }
 
 .text-box{
     padding: 20px 30px;
@@ -1411,10 +1422,10 @@ filter: grayscale(0) invert(1);
     border-radius: 0 5px 0 5px;
 }
 .left-arrow{
-    right: -10px;
+    left: -10px;
 }
 .right-arrow{
-    left: -10px;
+    right: -10px;
 } 
 /* 
 .left-arrow{
@@ -1503,11 +1514,11 @@ filter: grayscale(0) invert(1);
 
 
 
- .cisco-certificate{
+ .certificate{
     color: #53e79a;
  }
- .cisco-certificate:active,
- .cisco-certificate:hover{
+ .certificate:active,
+ .certificate:hover{
     border-bottom:  1px #53e79a solid;
  }
 
@@ -1887,7 +1898,7 @@ row-gap: 20px;
    }*/
 
    .footer{
-      height: 58dvh;
+      height: 58vh;
       width: 100dvw;
       position: relative;
       display: flex;
@@ -2105,7 +2116,7 @@ filter: grayscale(1) invert(0);
 
  
  .footer{
-    height: 60dvh;
+    height: 60vh;
  }
 }
 @media (max-width:900px) {
@@ -2289,9 +2300,6 @@ html{
     }
 /* phones */
 @media (max-width:600px ) {
-    body{
-        /* background-color: rgb(255, 132, 0); */
-    }
     html{
         overflow-x:hidden;
     }
@@ -2316,7 +2324,7 @@ html{
     
     }
     .home .blur-bg{
-        margin-top: 10px;
+        margin-top: -10px;
 
     }
     .scroll{
