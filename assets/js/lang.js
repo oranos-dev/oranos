@@ -17,16 +17,26 @@ const translations = {
     eduTitle4: 'Python Essentials 1',
     eduTitle5: 'Python Essentials 2',
     eduTitle6: 'Javascript Essentials 1',
+    eduTitle7: 'Foundations of Project Management • Google',
+    eduTitle8: 'Introduction to Web Development • IBM',
+    eduTitle9: 'Computer Hardware Basics',
     eduLocal1: 'Youssef Ben Tachfine High School ',
     eduLocal2: 'Faculty of Sciences Semlalia ',
     eduLocal3: 'NTIC Institute ',
     eduLocal4: 'Issued by Cisco ',
     eduLocal5: 'Issued by Cisco ',
     eduLocal6: 'Issued by Cisco ',
+    eduLocal7: 'Issued by Coursera ',
+    eduLocal8: 'Issued by Coursera ',
+    eduLocal9: 'Issued by Cisco ',
     ciscoCertificate: 'Check Certificate Validity',
+    courseraCertificate: 'Check Certificate Validity',
     eduDate4: 'July 18, 2024',
     eduDate5: 'July 31, 2024',
     eduDate6: 'August 5, 2024',
+    eduDate7: 'August 29, 2024',
+    eduDate8: 'September 3, 2024',
+    eduDate9: 'September 6, 2024',
     responsiveDesign: 'Responsive Design',
     scrollUp: 'Dive back to the top',
     footerRights: '© 2024 Oranos. All rights reserved.',
@@ -55,16 +65,26 @@ const translations = {
     eduTitle4: 'Python Essentials 1',
     eduTitle5: 'Python Essentials 2',
     eduTitle6: 'Javascript Essentials 1',
+    eduTitle7: 'Fondations de la Gestion de Projet • Google',
+    eduTitle8: 'Introduction au Développement Web • IBM',
+    eduTitle9: 'Bases du Matériel Informatique',
     eduLocal1: 'Lycée Youssef Ben Tachfine ',
     eduLocal2: 'Faculté des Sciences Semlalia ',
     eduLocal3: 'Institut NTIC ',
     eduLocal4: 'Délivré par Cisco ',
     eduLocal5: 'Délivré par Cisco ',
     eduLocal6: 'Délivré par Cisco ',
+    eduLocal7: 'Délivré par Coursera ',
+    eduLocal8: 'Délivré par Coursera ',
+    eduLocal9: 'Délivré par Cisco ',
     ciscoCertificate: 'Vérifier la validité du certificat',
+    courseraCertificate: 'Vérifier la validité du certificat',
     eduDate4: '18 Juillet 2024',
     eduDate5: '31 Juillet 2024',
     eduDate6: '5 Août 2024',
+    eduDate7: '29 Août 2024',
+    eduDate8: '3 Septembre 2024',
+    eduDate9: '6 Septembre 2024',
     responsiveDesign: 'Design Responsive',
     scrollUp: 'Remontez en haut',
     footerRights: '© 2024 Oranos. Tous droits réservés.',
@@ -134,18 +154,30 @@ function setLanguage(lang) {
   document.getElementById('eduTitle4').textContent = translations[lang].eduTitle4;
   document.getElementById('eduTitle5').textContent = translations[lang].eduTitle5;
   document.getElementById('eduTitle6').textContent = translations[lang].eduTitle6;
+  document.getElementById('eduTitle7').textContent = translations[lang].eduTitle7;
+  document.getElementById('eduTitle8').textContent = translations[lang].eduTitle8;
+  document.getElementById('eduTitle9').textContent = translations[lang].eduTitle9;
   document.getElementById('eduLocal1').firstChild.textContent = translations[lang].eduLocal1;
   document.getElementById('eduLocal2').firstChild.textContent = translations[lang].eduLocal2;
   document.getElementById('eduLocal3').firstChild.textContent = translations[lang].eduLocal3;
   document.getElementById('eduLocal4').firstChild.textContent = translations[lang].eduLocal4;
   document.getElementById('eduLocal5').firstChild.textContent = translations[lang].eduLocal5;
   document.getElementById('eduLocal6').firstChild.textContent = translations[lang].eduLocal6;
+  document.getElementById('eduLocal7').firstChild.textContent = translations[lang].eduLocal7;
+  document.getElementById('eduLocal8').firstChild.textContent = translations[lang].eduLocal8;
+  document.getElementById('eduLocal9').firstChild.textContent = translations[lang].eduLocal9;
   document.getElementById('ciscoCertificate').textContent = translations[lang].ciscoCertificate;
   document.getElementById('ciscoCertificate2').textContent = translations[lang].ciscoCertificate;
   document.getElementById('ciscoCertificate3').textContent = translations[lang].ciscoCertificate;
+  document.getElementById('ciscoCertificate4').textContent = translations[lang].ciscoCertificate;
+  document.getElementById('courseraCertificate').textContent = translations[lang].courseraCertificate;
+  document.getElementById('courseraCertificate2').textContent = translations[lang].courseraCertificate;
   document.getElementById('eduDate4').textContent = translations[lang].eduDate4;
   document.getElementById('eduDate5').textContent = translations[lang].eduDate5;
   document.getElementById('eduDate6').textContent = translations[lang].eduDate6;
+  document.getElementById('eduDate7').textContent = translations[lang].eduDate7;
+  document.getElementById('eduDate8').textContent = translations[lang].eduDate8;
+  document.getElementById('eduDate9').textContent = translations[lang].eduDate9;
   // footer !!!!
   document.getElementById('scrollUp').firstChild.textContent = translations[lang].scrollUp;
   document.getElementById('footerRights').textContent = translations[lang].footerRights;
