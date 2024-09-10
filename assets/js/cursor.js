@@ -214,6 +214,24 @@ if (!isTouchDevice()) {
         }
     });
 
+
+    
+// to hide the cursor dot/outline when hover on the map iframe
+mapbox=document.querySelector(".mapbox")
+mapbox.addEventListener("mouseover",function (){
+    const cursorOutline = document.getElementById('cursor-outline');
+    const cursorDot = document.getElementById('cursor-dot');
+    cursorOutline.style.display = 'none';
+    cursorDot.style.display = 'none';
+})
+mapbox.addEventListener("mouseleave",function (){
+    const cursorOutline = document.getElementById('cursor-outline');
+    const cursorDot = document.getElementById('cursor-dot');
+    cursorOutline.style.display = 'flex';
+    cursorDot.style.display = 'flex';
+})
+
+
     // Add event listeners to update cursor position
     document.addEventListener('mousemove', updateCursor);
 
