@@ -121,6 +121,7 @@ header ul li a{
     font-size: 14px;
 }
 h1{
+    margin-top: -90px;
     font-size: 60px;
     width: 65%;
     text-align: center;
@@ -225,6 +226,7 @@ h1 span{
     backdrop-filter: blur(10px) brightness(1);
     -webkit-backdrop-filter: blur(10px) brightness(1);
     height: 600px;
+    height: 76%;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -235,13 +237,14 @@ h1 span{
     box-shadow: 1px 0px 100px 16px #0000000e;
 -webkit-box-shadow: 1px 0px 100px 16px #0000000e;
 -moz-box-shadow: 1px 0px 100px 16px #0000000e;
+position: relative;
     
 }
 .home-p{
     font-size: 14px;
     font-weight: 500;
     color: #646464;
-   
+    font-family: "Montserrat", system-ui;
     width: 45%;
     text-align: center;
 }
@@ -290,13 +293,13 @@ h1 span{
 
 
 
-.scroll {
+.scroll{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position: absolute;
     cursor: pointer;
-    top: 80px;
+    bottom: 5%;
     color: #1c1d24;
     font-size: 15px;
     animation: upDown 0.5s infinite alternate;
@@ -774,6 +777,8 @@ filter: grayscale(0) invert(1);
    bottom: -260px;
    z-index: 0;
    fill: #3c4460;
+
+
 }
 .dark .footer-form button:disabled{
     background-color: #5e75c6;
@@ -1457,7 +1462,7 @@ filter: grayscale(0) invert(1);
 
 
 
- @media all and (max-width:950px){
+ @media  (max-width:950px){
      .education{
          margin:50px auto;
         }
@@ -1843,15 +1848,16 @@ row-gap: 20px;
 /* footer map */
 
  .mapbox{
-    height: 100%;
+    height: 234.5px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    
  }
  .mapbox .map{
     border-radius: 10px;
     width: 100%;
-    height: 350px;
+    height: 234.5px;
     border: 1px solid #b3b3b38e;
     overflow: hidden;
     outline: none;
@@ -1917,8 +1923,6 @@ row-gap: 20px;
     height: 100%;
     z-index: 1;
       padding: 0 80px 50px 80px;
-    backdrop-filter: blur(20px) ;
-    -webkit-backdrop-filter: blur(20px) ;
    }
    .footer-text{
       width: 80%;
@@ -2014,14 +2018,14 @@ row-gap: 20px;
 
    .mapbox{
       width: 100%;
-      height: 75%;
+      height: 100%;
 
 
       
    }
    .mapbox .map{
       width: 100%;
-      height: 100%;
+      height: 237px;
 
 filter: grayscale(1) invert(0);
    }
@@ -2107,7 +2111,23 @@ filter: grayscale(1) invert(0);
   
 /* responsive */
 
+
+
+@media (max-height:800px) {
+  
+     
+     .footer{
+    overflow: hidden;
+    height: 460px
+}
+
+
+    }
+
+
 /* tablets */
+
+
 @media (max-width:1100px) {
 
 .mapbox{
@@ -2150,9 +2170,7 @@ filter: grayscale(1) invert(0);
     .home .blur-bg{
         margin-top: 10px;
     }
-    .scroll{
-        top: 80px;
-    }
+   
 
 
     /* about section */
@@ -2240,7 +2258,7 @@ html{
 }
 .footer-container{
     overflow: hidden;
-    padding: 0 20px 50px 20px;
+    padding: 0 20px 10px 20px;
 }
 .footer-text{
      scale: 0.8;
@@ -2287,9 +2305,6 @@ html{
         font-size: 40px;
         
     }
-    .scroll{
-        top: 100px;
-    }
     .loader svg{
         scale: 0.8;
     }
@@ -2326,9 +2341,6 @@ html{
     .home .blur-bg{
         margin-top: -10px;
 
-    }
-    .scroll{
-        top: 80px;
     }
     .dot12 {
         fill: rgb(151, 175, 219);
