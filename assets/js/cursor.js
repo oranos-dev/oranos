@@ -215,7 +215,6 @@ if (!isTouchDevice()) {
     });
 
 
-    
 // to hide the cursor dot/outline when hover on the map iframe
 mapbox=document.querySelector(".map")
 mapbox.addEventListener("mouseover",function (){
@@ -230,6 +229,7 @@ mapbox.addEventListener("mouseleave",function (){
     cursorOutline.style.display = 'flex';
     cursorDot.style.display = 'flex';
 })
+
 
 
     // Add event listeners to update cursor position
