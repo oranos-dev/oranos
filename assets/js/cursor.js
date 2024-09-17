@@ -217,7 +217,7 @@ if (!isTouchDevice()) {
 
     
 // to hide the cursor dot/outline when hover on the map iframe
-mapbox=document.querySelector(".mapbox")
+mapbox=document.querySelector(".map")
 mapbox.addEventListener("mouseover",function (){
     const cursorOutline = document.getElementById('cursor-outline');
     const cursorDot = document.getElementById('cursor-dot');
